@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: black;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	padding-top: 1rem;
+}
+
+nav {
+	background-color: black;
+	text-align: center;
+	width: 550px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding-left: 0;
+}
+
+ul a {
+	color: white;
+}
+
+ul li.active a {
+	text-decoration: underline;
+}
+
+main .photo {
+	width: 350px;
+	height: 350px;
+	background-color: black;
+	border: 2px solid black;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+
+main p {
+	line-height: 1.5;
+	margin-bottom: 0.69rem;
+}
+
+.card-article {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 3rem;
+}
+
+.card-article-picture {
+	width: 40%;
+	height: 250px;
+	background-color: black;
+}
+
+.card-article-picture img {
+	object-fit: cover;
+	height: 250px;
+}
+
+.card-article-description {
+	width: 60%; 
+}
+
+.card-article-button {
+	background-color: black;
+	color: white;
+	border: none;
+	width: 100px;
+	padding-inline: 1em;
+	padding-block: .8em;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.card-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.card-project h2 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.card-project-picture {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+footer {
+	padding-bottom: 2rem;
+}
+
+.hamburger {
+	width: 40px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: none;
+	cursor: pointer;
+}
+
+/* Responsive part */
+@media (max-width: 950px)
+{
+	nav {
+		position: absolute;
+		width: 200px;
+		top: 60px;
+		right: 15px;
+		display: none;
+	}
+	
+	nav ul {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 35px;
+		margin-top: 2rem;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
