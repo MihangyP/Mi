@@ -17,6 +17,11 @@ a {
 
 h1 {
 	font-size: 50px;
+	color: #181818;
+}
+
+h2 {
+	color: #181818;
 }
 
 header {
@@ -29,7 +34,7 @@ header {
 }
 
 nav {
-	background-color: black;
+	background-color: #181818;
 	text-align: center;
 	width: 550px;
 }
@@ -96,7 +101,7 @@ main p {
 }
 
 .card-article-button {
-	background-color: black;
+	background-color: #181818;
 	color: white;
 	border: none;
 	width: 100px;
@@ -120,10 +125,8 @@ main p {
 }
 
 .card-project-picture {
-	width: 100px;
-	height: 100px;
-	background-color: black;
-	border-radius: 50%;
+	height: 70px;
+	width: 70px;
 }
 
 footer {
@@ -148,6 +151,7 @@ footer {
 		top: 60px;
 		right: 15px;
 		display: none;
+		box-shadow: 0 0 7px #181818;
 	}
 	
 	nav ul {
@@ -156,10 +160,37 @@ footer {
 
 	h1 {
 		font-size: 35px;
-		margin-top: 2rem;
+		margin-top: 4rem;
 	}
 
 	.hamburger {
 		display: block;
+	}
+
+	.card-article {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		/*text-align: center;*/
+	}
+
+	.card-article-button {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.card-article-picture {
+		width: 100%;
+		height: 150px;
+		background-color: black;
+	}
+
+	.card-article-picture img {
+		object-fit: cover;
+		height: 150px;
+	}
+
+	.card-article-description {
+		width: 100%; 
 	}
 }
