@@ -133,6 +133,15 @@ footer {
 	padding-bottom: 2rem;
 }
 
+footer .bar {
+	width: 30px;
+	height: 1px;
+	background-color: #181818;
+	margin-bottom: 10px;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
 .hamburger {
 	width: 40px;
 	position: absolute;
